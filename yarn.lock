@@ -668,7 +668,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"autoprefixer@npm:^10.0.1":
+"autoprefixer@npm:^10.4.17":
   version: 10.4.20
   resolution: "autoprefixer@npm:10.4.20"
   dependencies:
@@ -2760,15 +2760,15 @@ __metadata:
     "@types/node": ^20
     "@types/react": ^18
     "@types/react-dom": ^18
-    autoprefixer: ^10.0.1
+    autoprefixer: ^10.4.17
     eslint: ^8
     eslint-config-next: 14.1.0
     framer-motion: ^11.0.0
     next: 14.1.0
-    postcss: ^8
+    postcss: ^8.4.35
     react: ^18
     react-dom: ^18
-    tailwindcss: ^3.3.0
+    tailwindcss: ^3.4.1
     typescript: ^5
   languageName: unknown
   linkType: soft
@@ -3268,7 +3268,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8, postcss@npm:^8.4.47":
+"postcss@npm:^8.4.35, postcss@npm:^8.4.47":
   version: 8.5.3
   resolution: "postcss@npm:8.5.3"
   dependencies:
@@ -3947,7 +3947,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^3.3.0":
+"tailwindcss@npm:^3.4.1":
   version: 3.4.17
   resolution: "tailwindcss@npm:3.4.17"
   dependencies:
