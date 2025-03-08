@@ -12,11 +12,11 @@ export default function Home() {
       <Header />
       <main className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900">
+        <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950">
           {/* Dekoratif elementler */}
           <div className="absolute inset-0 overflow-hidden">
-            <div className="absolute top-1/4 left-0 w-96 h-96 bg-blue-500/20 rounded-full filter blur-3xl"></div>
-            <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-blue-300/20 rounded-full filter blur-3xl"></div>
+            <div className="absolute top-1/4 left-0 w-96 h-96 bg-blue-400/10 rounded-full filter blur-3xl"></div>
+            <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-blue-300/10 rounded-full filter blur-3xl"></div>
           </div>
           <div className="relative z-10 text-center text-white px-4">
             <motion.h1 
@@ -49,6 +49,13 @@ export default function Home() {
                 0545 656 40 20
               </a>
               <a
+                href="tel:+905457696165"
+                className="inline-flex items-center justify-center bg-blue-600 text-white px-8 py-3 rounded-xl text-lg font-semibold hover:bg-blue-700 transition-colors"
+              >
+                <PhoneIcon className="w-6 h-6 mr-2" />
+                0545 769 61 65
+              </a>
+              <a
                 href="https://wa.me/905456564020"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -62,9 +69,9 @@ export default function Home() {
         </section>
 
         {/* Hizmetlerimiz */}
-        <section id="hizmetler" className="py-20 px-4 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900">
+        <section id="hizmetler" className="py-20 px-4 bg-white">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white">Hizmetlerimiz</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">Hizmetlerimiz</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
@@ -88,13 +95,13 @@ export default function Home() {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.2 }}
-                  className="p-6 bg-white/10 backdrop-blur-lg rounded-xl text-center border border-white/20"
+                  className="p-6 bg-blue-50 rounded-xl text-center border border-blue-100 shadow-lg hover:shadow-xl transition-shadow"
                 >
-                  <div className="text-blue-400 mb-4 flex justify-center">
+                  <div className="text-blue-600 mb-4 flex justify-center">
                     {service.icon}
                   </div>
-                  <h3 className="text-xl font-semibold mb-2 text-white">{service.title}</h3>
-                  <p className="text-blue-100/80">{service.description}</p>
+                  <h3 className="text-xl font-semibold mb-2 text-gray-900">{service.title}</h3>
+                  <p className="text-gray-600">{service.description}</p>
                 </motion.div>
               ))}
             </div>
@@ -105,7 +112,7 @@ export default function Home() {
         <Districts />
 
         {/* İletişim */}
-        <section id="iletisim" className="py-20 px-4 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900">
+        <section id="iletisim" className="py-20 px-4 bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-white">Bize Ulaşın</h2>
             <p className="text-xl text-blue-100/80 mb-8">
@@ -118,6 +125,13 @@ export default function Home() {
               >
                 <PhoneIcon className="w-6 h-6 mr-2" />
                 0545 656 40 20
+              </a>
+              <a
+                href="tel:+905457696165"
+                className="inline-flex items-center justify-center bg-blue-600 text-white px-8 py-3 rounded-xl text-lg font-semibold hover:bg-blue-700 transition-colors"
+              >
+                <PhoneIcon className="w-6 h-6 mr-2" />
+                0545 769 61 65
               </a>
               <a
                 href="https://wa.me/905456564020"
